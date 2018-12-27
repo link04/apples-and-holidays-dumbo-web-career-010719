@@ -79,12 +79,12 @@ def all_supplies_in_holidays(holiday_hash)
       formmated_supplies1 = supplies.join(", ")
       formmated_supplies2 = formmated_supplies1.split("_")
       
-      new_supplies = supplies.collect do |supply|
-        supply.split("_").each { |word| word.capitalize!}
+      new_holiday = holiday.collect do |supply|
+        holiday.split("_").each { |word| word.capitalize!}
       end
       
       
-      puts "  #{holiday.to_s.capitalize}: #{new_supplies.join(", ")}"
+      puts "  #{new_holiday.to_s.capitalize}: #{new_supplies.join(", ")}"
       
     end
   end
