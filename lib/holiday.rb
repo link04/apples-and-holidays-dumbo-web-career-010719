@@ -77,10 +77,10 @@ def all_supplies_in_holidays(holiday_hash)
     
     value.each do |holiday, supplies|
       
-      holiday_altered = holiday.split("_")
+      holiday_altered = holiday.to_s.split("_")
       holiday_altered = holiday_altered.capitalize!
       
-      puts "  #{holiday_altered.to_s}: #{new_supplies.join(", ")}"
+      puts "  #{holiday_altered}: #{new_supplies.join(", ")}"
       
     end
   end
