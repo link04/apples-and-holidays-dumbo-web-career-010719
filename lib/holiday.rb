@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
       formmated_supplies2 = formmated_supplies1.split("_")
       
       new_supplies = supplies.collect do |supply|
-        supply.split("_").collect { |word| word.capitalize!}
+        supply.split("_").each { |word| word.capitalize!}
       end
       
       
