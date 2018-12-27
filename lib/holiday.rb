@@ -93,8 +93,6 @@ def all_holidays_with_bbq(holiday_hash)
     if value.values.include? "BBQ"
       the_keys << value.keys
     end
-    
-    
   end
-
+  the_keys
 end
