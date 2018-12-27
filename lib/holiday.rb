@@ -73,10 +73,10 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
   holiday_hash.each do |key, value|
-    key[value]
+    key[value] = key.to_s.capitalize!
   end
   
- :winter => {
+ #:winter => {
   #     :christmas => ["Lights", "Wreath"],
   #     :new_years => ["Party Hats"]
   #   },
