@@ -95,9 +95,8 @@ def all_holidays_with_bbq(holiday_hash)
       if values1.include? "BBQ" 
         the_keys << key1
       end
-  
     end
-    
+    the_keys
   end
 
 end
