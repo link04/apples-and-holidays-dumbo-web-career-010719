@@ -89,7 +89,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   
   
-  holiday_hash.select do |key, value|
+  holiday_hash.collect do |key, value|
     value.select{ |key1, values1| values1.include? "BBQ" }.keys
   end
 
